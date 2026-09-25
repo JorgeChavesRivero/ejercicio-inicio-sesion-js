@@ -14,7 +14,7 @@ function validarAcceso() {
         } else {
             intentos++;
             console.log(`Datos incorrectos. Intento ${intentos} de ${INTENTOSMAXIMO}.`);
-            if (intentos===0) {
+            if (intentos===INTENTOSMAXIMO) {
                 console.log(`Usuario bloqueado. Ha superado el número de intentos.`);
             }
         }
